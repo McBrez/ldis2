@@ -20,13 +20,12 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_arith.all;
 use ieee.std_logic_signed.all;
-
+use ieee.numeric_std.all;
 
 entity quadratic_func is
 
-generic ( fw : integer := 6 ); -- width of fraction in range 0 to 8
+generic ( fw : integer := 10 ); -- width of fraction in range 0 to 8
 
 port (
 
@@ -36,43 +35,44 @@ port (
   -- clock enable
   en       : in  std_logic;
   
-  -- Coefficients as 8-bit signed fraction
-  coeff_a  : in  std_logic_vector(7 downto 0);
-  coeff_b  : in  std_logic_vector(7 downto 0);
-  coeff_c  : in  std_logic_vector(7 downto 0);
+  -- Coefficients as 12-bit signed fraction
+  coeff_a  : in  std_logic_vector(21 downto 0);
+  coeff_b  : in  std_logic_vector(21 downto 0);
+  coeff_c  : in  std_logic_vector(21 downto 0);
   
-  -- Input as a 8-bit signed fraction
-  x_in     : in  std_logic_vector(7 downto 0);
+  -- Input as a 12-bit signed fraction
+  x_in     : in  std_logic_vector(11 downto 0);
   
-  -- Output as a 24-bit signed fraction
-  y_out    : out std_logic_vector(23 downto 0));
-
+  -- Output as a 36-bit signed fraction and 
+  y_out     : out std_logic_vector(65 downto 0);
+  y_trunc_out : out std_logic_vector(fw+3 downto 0)
+  );
 end entity;
 
 
 architecture rtl of quadratic_func is
 
 
-signal  zeros          : std_logic_vector(23 downto 0);
+signal  zeros          : std_logic_vector(35 downto 0);
+signal  ones           : std_logic_vector(35 downto 0);
+signal  coeff_a_reg    : std_logic_vector(21 downto 0);
+signal  coeff_b_reg    : std_logic_vector(21 downto 0);
+signal  coeff_c_reg    : std_logic_vector(21 downto 0);
+signal  coeff_c_del    : std_logic_vector(21 downto 0);
 
-signal  coeff_a_reg    : std_logic_vector(7 downto 0);
-signal  coeff_b_reg    : std_logic_vector(7 downto 0);
-signal  coeff_c_reg    : std_logic_vector(7 downto 0);
-signal  coeff_c_del    : std_logic_vector(7 downto 0);
+signal  x2             : std_logic_vector(43 downto 0);
+signal  x2_a           : std_logic_vector(65 downto 0);
+signal  x2_a_norm      : std_logic_vector(65 downto 0);
 
-signal  x2             : std_logic_vector(15 downto 0);
-signal  x2_a           : std_logic_vector(23 downto 0);
-signal  x2_a_norm      : std_logic_vector(23 downto 0);
+signal  x1             : std_logic_vector(21 downto 0);
+signal  x1_del         : std_logic_vector(21 downto 0);
+signal  x1_b           : std_logic_vector(43 downto 0);
+signal  x1_b_norm      : std_logic_vector(43 + fw downto 0);
 
-signal  x1             : std_logic_vector(7 downto 0);
-signal  x1_del         : std_logic_vector(7 downto 0);
-signal  x1_b           : std_logic_vector(15 downto 0);
-signal  x1_b_norm      : std_logic_vector(15 + fw downto 0);
+signal  x0_c_norm      : std_logic_vector(21 + fw*2 downto 0);
 
-signal  x0_c_norm      : std_logic_vector(7 + fw*2 downto 0);
-
-signal  sum            : std_logic_vector(23 downto 0);
-signal  sum_reg        : std_logic_vector(23 downto 0);
+signal  sum            : std_logic_vector(65 downto 0);
+signal  sum_reg        : std_logic_vector(65 downto 0);
 
 
 begin
@@ -83,13 +83,21 @@ begin
 -----------------
 
 zeros <= (others => '0');
-
+ones  <= (others => '1');
 -------------------------------------------------------
--- Rename input x term to maintain naming convention --
+-- Rename input x term to maintain naming convention
+-- and append zeroes, so that it aligns with the decimal
+-- point.
 -------------------------------------------------------
-
-x1 <= x_in;
-
+inputStage : process(clk)
+begin
+    if x_in(11) = '0' then
+        x1 <= zeros(fw-1 downto 0) & x_in ;
+    else
+        x1 <= ones(fw-1 downto 0) & x_in ;
+    end if;
+    
+end process inputStage;
 -------------------------------
 -- Pipeline the coefficients --
 -------------------------------
@@ -193,11 +201,11 @@ begin
 end process out_reg;
 
 ---------------------------------------------
--- 24-bit output                           --
+-- 35-bit output                           --
 -- Integer part of result is y_out >> fw*3 --
 ---------------------------------------------
 
 y_out <= sum_reg;
-
+y_trunc_out <= sum_reg(fw*3+3 downto fw*2);
 
 end rtl;

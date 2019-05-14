@@ -55,7 +55,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>beaf14dc</spirit:value>
+            <spirit:value>30b21fe0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -68,7 +68,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>beaf14dc</spirit:value>
+            <spirit:value>30b21fe0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -195,7 +195,12 @@
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
         <spirit:name>dataWidth</spirit:name>
         <spirit:displayName>Datawidth</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.dataWidth" spirit:minimum="0">32</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.dataWidth" spirit:minimum="0">8</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="STD_LOGIC_VECTOR(2 downto 0)">
+        <spirit:name>sampleFreq</spirit:name>
+        <spirit:displayName>Samplefreq</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.sampleFreq" spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -205,7 +210,7 @@
       <spirit:file>
         <spirit:name>xgui/Sampling_Interface_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_f3e9006e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_8ff15af2</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -215,7 +220,12 @@
     <spirit:parameter>
       <spirit:name>dataWidth</spirit:name>
       <spirit:displayName>Datawidth</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.dataWidth" spirit:minimum="0" spirit:rangeType="long">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.dataWidth" spirit:minimum="0" spirit:rangeType="long">8</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>sampleFreq</spirit:name>
+      <spirit:displayName>Samplefreq</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.sampleFreq" spirit:bitStringLength="3">&quot;000&quot;</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -237,7 +247,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-04-07T19:45:48Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2019-05-07T19:21:59Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>

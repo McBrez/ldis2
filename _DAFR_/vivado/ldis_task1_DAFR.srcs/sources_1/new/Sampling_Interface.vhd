@@ -32,16 +32,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Sampling_Interface is
-    Generic( dataWidth : positive := 32  ); 
-
-    Port ( MOSI     : out STD_LOGIC;
-           MISO     : in  STD_LOGIC;
-           SPI_INT1 : in  STD_LOGIC;
-           CS       : out STD_LOGIC;
-           SCLK     : out STD_LOGIC;
-           RESET    : in  STD_LOGIC;
-           CLK      : in  STD_LOGIC;
-           STREAM   : out STD_LOGIC_VECTOR (11 downto 0)
+    Generic(
+        dataWidth : positive := 8;
+        sampleFreq : STD_LOGIC_VECTOR(2 downto 0) := "000"
+    );
+    Port (
+        MOSI     : out STD_LOGIC;
+        MISO     : in  STD_LOGIC;
+        SPI_INT1 : in  STD_LOGIC;
+        CS       : out STD_LOGIC;
+        SCLK     : out STD_LOGIC;
+        RESET    : in  STD_LOGIC;
+        CLK      : in  STD_LOGIC;
+        STREAM   : out STD_LOGIC_VECTOR (11 downto 0)
      ); 
 end Sampling_Interface;
 
@@ -51,8 +54,12 @@ architecture Behavioral of Sampling_Interface is
     signal di_req       : STD_LOGIC;
     signal do_valid     : STD_LOGIC;
     signal wren         : STD_LOGIC;
+    signal nReset       : STD_LOGIC;
     
     component SampleController
+        generic( 
+            sampleFreq : STD_LOGIC_VECTOR(2 downto 0) := "011" 
+        );
         port (
             clk_i      : in  STD_LOGIC;
             rst_i      : in  STD_LOGIC;
@@ -109,8 +116,13 @@ architecture Behavioral of Sampling_Interface is
     end component;
 
 begin
-
+    
+    nRESET <= not RESET;
+    
     Controller : SampleController
+        generic map(
+            sampleFreq => sampleFreq
+        )
         port map(
             clk_i      => CLK,
             rst_i      => RESET,
@@ -128,7 +140,7 @@ begin
         port map(
             sclk_i => CLK,
             pclk_i => CLK,
-            rst_i  => RESET,
+            rst_i  => nRESET,
             ---- serial interface ----
             spi_ssel_o => CS,
             spi_sck_o  => SCLK,
