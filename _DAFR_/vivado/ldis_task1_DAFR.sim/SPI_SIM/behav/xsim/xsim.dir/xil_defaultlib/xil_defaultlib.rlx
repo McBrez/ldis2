@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.sim/SPI_SIM/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/SPI_SIM/new/Sampling_Interface_TB.vhd,1554753456,vhdl,,,,sampling_interface_tb,,,,,,,,
+D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd,1554652483,vhdl,,,,spi_master,,,,,,,,
+D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/SampleController.vhd,1554762580,vhdl,,,,samplecontroller,,,,,,,,
+D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/Sampling_Interface.vhd,1554756436,vhdl,,,,sampling_interface,,,,,,,,

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 15 21:44:29 2019
+# Process ID: 7920
+# Current directory: D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.sim/APBSlaveIf_SimulationSet/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.sim/APBSlaveIf_SimulationSet/behav/xsim/xsim.dir/APBSlaveIF_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.sim/APBSlaveIf_SimulationSet/behav/xsim/webtalk.log
+# Journal file: D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.sim/APBSlaveIf_SimulationSet/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.sim/APBSlaveIf_SimulationSet/behav/xsim/xsim.dir/APBSlaveIF_TB_behav/webtalk/xsim_webtalk.tcl -notrace

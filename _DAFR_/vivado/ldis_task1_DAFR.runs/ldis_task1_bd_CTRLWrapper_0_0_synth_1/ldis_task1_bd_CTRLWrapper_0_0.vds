@@ -1,0 +1,478 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun May 19 23:22:07 2019
+# Process ID: 744
+# Current directory: D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.runs/ldis_task1_bd_CTRLWrapper_0_0_synth_1
+# Command line: vivado.exe -log ldis_task1_bd_CTRLWrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ldis_task1_bd_CTRLWrapper_0_0.tcl
+# Log file: D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.runs/ldis_task1_bd_CTRLWrapper_0_0_synth_1/ldis_task1_bd_CTRLWrapper_0_0.vds
+# Journal file: D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.runs/ldis_task1_bd_CTRLWrapper_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/David/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source ldis_task1_bd_CTRLWrapper_0_0.tcl -notrace
+WARNING: [Board 49-91] Board repository path '{C:UsersDavidDocumentsivado-boards
+ewoard_files}' does not exist, it will not be used to search board files.
+Command: synth_design -top ldis_task1_bd_CTRLWrapper_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10960 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 411.348 ; gain = 104.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ldis_task1_bd_CTRLWrapper_0_0' [d:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/bd/ldis_task1_bd/ip/ldis_task1_bd_CTRLWrapper_0_0/synth/ldis_task1_bd_CTRLWrapper_0_0.vhd:77]
+	Parameter slaveCount bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'CTRLWrapper' declared at 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/CTRLWrapper.vhd:35' bound to instance 'U0' of component 'CTRLWrapper' [d:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/bd/ldis_task1_bd/ip/ldis_task1_bd_CTRLWrapper_0_0/synth/ldis_task1_bd_CTRLWrapper_0_0.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'CTRLWrapper' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/CTRLWrapper.vhd:61]
+	Parameter slaveCount bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CTRLWrapper' (1#1) [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/CTRLWrapper.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'ldis_task1_bd_CTRLWrapper_0_0' (2#1) [d:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/bd/ldis_task1_bd/ip/ldis_task1_bd_CTRLWrapper_0_0/synth/ldis_task1_bd_CTRLWrapper_0_0.vhd:77]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[31]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[30]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[29]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[28]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[27]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[26]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[25]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[24]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[23]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[22]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[21]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[20]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[19]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[18]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[17]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[16]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[15]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[14]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[13]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[12]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[11]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[10]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[9]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[8]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[7]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[6]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[5]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[4]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[3]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[2]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[1]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S3[0]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[31]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[30]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[29]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[28]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[27]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[26]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[25]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[24]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[23]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[22]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[21]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[20]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[19]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[18]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[17]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[16]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[15]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[14]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[13]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[12]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[11]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[10]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[9]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[8]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[7]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[6]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[5]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[4]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[3]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[2]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[1]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PRDATA_S4[0]
+WARNING: [Synth 8-3331] design CTRLWrapper has unconnected port PREADY_S4
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 466.859 ; gain = 160.387
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 466.859 ; gain = 160.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 466.859 ; gain = 160.387
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 791.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 791.980 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.068 . Memory (MB): peak = 794.254 ; gain = 2.273
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 794.254 ; gain = 487.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 794.254 ; gain = 487.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 794.254 ; gain = 487.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'WrapperState_reg' in module 'CTRLWrapper'
+INFO: [Synth 8-5545] ROM "PWDATA" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "PWDATA0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "PADDR" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "WrapperStateLast" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "WrapperState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+       wrapperstate_init |                              000 | 00000000000000000000000000000000
+     wrapperstate_getacc |                              001 | 00000000000000000000000000000010
+       wrapperstate_wait |                              010 | 00000000000000000000000000000001
+     wrapperstate_setdsp |                              011 | 00000000000000000000000000000011
+     wrapperstate_getdsp |                              100 | 00000000000000000000000000000100
+     wrapperstate_setout |                              101 | 00000000000000000000000000000101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'WrapperState_reg' using encoding 'sequential' in module 'CTRLWrapper'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 794.254 ; gain = 487.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 3     
+	   6 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CTRLWrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 3     
+	   6 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3917] design ldis_task1_bd_CTRLWrapper_0_0 has port PSEL[3] driven by constant 0
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[31]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[30]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[29]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[28]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[27]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[26]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[25]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[24]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[23]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[22]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[21]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[20]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[19]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[18]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[17]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[16]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[15]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[14]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[13]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[12]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[11]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[10]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[9]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[8]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[7]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[6]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[5]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[4]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[3]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[2]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[1]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S3[0]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S4[31]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S4[30]
+WARNING: [Synth 8-3331] design ldis_task1_bd_CTRLWrapper_0_0 has unconnected port PRDATA_S4[29]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[31]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[30]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[29]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[28]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[27]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[26]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[25]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[24]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[23]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[22]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[21]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[20]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[19]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[18]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[17]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[16]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[15]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[14]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[13]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[12]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[11]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[10]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[9]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[8]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[7]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[6]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[5]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/WrapperStateLast_reg[4]' (FDE) to 'U0/WrapperStateLast_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/WrapperStateLast_reg[3] )
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[0]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[1]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[3]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[4]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[5]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[6]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[7]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[8]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[9]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[10]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[11]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[12]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[13]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[14]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[15]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[16]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[17]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[18]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[19]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[20]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[21]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[22]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[23]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[24]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[25]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[26]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[27]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[28]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[29]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/PADDR_reg[30]' (FDE) to 'U0/PADDR_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/PADDR_reg[31] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 794.254 ; gain = 487.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 796.813 ; gain = 490.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 796.887 ; gain = 490.414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 816.555 ; gain = 510.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 816.555 ; gain = 510.082
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 816.555 ; gain = 510.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 816.555 ; gain = 510.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 816.555 ; gain = 510.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 816.555 ; gain = 510.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 816.555 ; gain = 510.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     2|
+|2     |LUT3 |    39|
+|3     |LUT4 |     3|
+|4     |LUT5 |     1|
+|5     |LUT6 |     9|
+|6     |FDRE |   108|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |   162|
+|2     |  U0     |CTRLWrapper |   162|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 816.555 ; gain = 510.082
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 65 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 816.555 ; gain = 182.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 816.555 ; gain = 510.082
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 817.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 817.664 ; gain = 524.340
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 817.664 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.runs/ldis_task1_bd_CTRLWrapper_0_0_synth_1/ldis_task1_bd_CTRLWrapper_0_0.dcp' has been generated.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 817.664 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.runs/ldis_task1_bd_CTRLWrapper_0_0_synth_1/ldis_task1_bd_CTRLWrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ldis_task1_bd_CTRLWrapper_0_0_utilization_synth.rpt -pb ldis_task1_bd_CTRLWrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 19 23:22:40 2019...

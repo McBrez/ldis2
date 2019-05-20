@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="APBSlaveIF_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="APBSlaveIF_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="247720000fs"></ZoomStartTime>
+      <ZoomEndTime time="284820001fs"></ZoomEndTime>
+      <Cursor1Time time="250000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="159"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/APBSlaveIF_TB/CLK_TB" type="logic">
+      <obj_property name="ElementShortName">CLK_TB</obj_property>
+      <obj_property name="ObjectShortName">CLK_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/PWDATA_TB" type="array">
+      <obj_property name="ElementShortName">PWDATA_TB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PWDATA_TB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/PADDR_TB" type="array">
+      <obj_property name="ElementShortName">PADDR_TB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PADDR_TB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/PWRITE_TB" type="logic">
+      <obj_property name="ElementShortName">PWRITE_TB</obj_property>
+      <obj_property name="ObjectShortName">PWRITE_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/PSEL_TB" type="array">
+      <obj_property name="ElementShortName">PSEL_TB[2:0]</obj_property>
+      <obj_property name="ObjectShortName">PSEL_TB[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/PENABLE_TB" type="logic">
+      <obj_property name="ElementShortName">PENABLE_TB</obj_property>
+      <obj_property name="ObjectShortName">PENABLE_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/PRDATA_TB" type="array">
+      <obj_property name="ElementShortName">PRDATA_TB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PRDATA_TB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/PREADY_TB" type="logic">
+      <obj_property name="ElementShortName">PREADY_TB</obj_property>
+      <obj_property name="ObjectShortName">PREADY_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/REG_IN_TB" type="array">
+      <obj_property name="ElementShortName">REG_IN_TB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_IN_TB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/REG_OUT_TB" type="array">
+      <obj_property name="ElementShortName">REG_OUT_TB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_OUT_TB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/REG_RW_TB" type="logic">
+      <obj_property name="ElementShortName">REG_RW_TB</obj_property>
+      <obj_property name="ObjectShortName">REG_RW_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/REG_WREN_TB" type="logic">
+      <obj_property name="ElementShortName">REG_WREN_TB</obj_property>
+      <obj_property name="ObjectShortName">REG_WREN_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/REG_ADDR_TB" type="array">
+      <obj_property name="ElementShortName">REG_ADDR_TB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_ADDR_TB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/REG_RDY_TB" type="logic">
+      <obj_property name="ElementShortName">REG_RDY_TB</obj_property>
+      <obj_property name="ObjectShortName">REG_RDY_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/DUT/regArray" type="array">
+      <obj_property name="ElementShortName">regArray[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regArray[0:3][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/APBSlaveIF_TB/DUT/regInterfaceState" type="other">
+      <obj_property name="ElementShortName">regInterfaceState</obj_property>
+      <obj_property name="ObjectShortName">regInterfaceState</obj_property>
+   </wvobject>
+</wave_config>

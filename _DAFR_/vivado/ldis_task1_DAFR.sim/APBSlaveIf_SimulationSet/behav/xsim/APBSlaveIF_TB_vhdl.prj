@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ldis_task1_DAFR.srcs/sources_1/new/APBSlaveIF.vhd" \
+"../../../../ldis_task1_DAFR.srcs/APBSlaveIf_SimulationSet/new/APBSlaveIF_TB.vhd" \
+
+# Do not sort compile order
+nosort

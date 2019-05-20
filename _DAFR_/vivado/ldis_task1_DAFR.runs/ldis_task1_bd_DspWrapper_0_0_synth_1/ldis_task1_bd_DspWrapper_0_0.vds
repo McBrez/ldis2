@@ -1,0 +1,580 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 20 16:38:36 2019
+# Process ID: 11632
+# Current directory: D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.runs/ldis_task1_bd_DspWrapper_0_0_synth_1
+# Command line: vivado.exe -log ldis_task1_bd_DspWrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ldis_task1_bd_DspWrapper_0_0.tcl
+# Log file: D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.runs/ldis_task1_bd_DspWrapper_0_0_synth_1/ldis_task1_bd_DspWrapper_0_0.vds
+# Journal file: D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.runs/ldis_task1_bd_DspWrapper_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/David/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source ldis_task1_bd_DspWrapper_0_0.tcl -notrace
+WARNING: [Board 49-91] Board repository path '{C:UsersDavidDocumentsivado-boards
+ewoard_files}' does not exist, it will not be used to search board files.
+Command: synth_design -top ldis_task1_bd_DspWrapper_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2940 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 410.898 ; gain = 104.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ldis_task1_bd_DspWrapper_0_0' [d:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/bd/ldis_task1_bd/ip/ldis_task1_bd_DspWrapper_0_0/synth/ldis_task1_bd_DspWrapper_0_0.vhd:77]
+	Parameter slaveCount bound to: 4 - type: integer 
+	Parameter pindex bound to: 1 - type: integer 
+	Parameter fw bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'DspWrapper' declared at 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/DspWrapper.vhd:37' bound to instance 'U0' of component 'DspWrapper' [d:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/bd/ldis_task1_bd/ip/ldis_task1_bd_DspWrapper_0_0/synth/ldis_task1_bd_DspWrapper_0_0.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'DspWrapper' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/DspWrapper.vhd:67]
+	Parameter slaveCount bound to: 4 - type: integer 
+	Parameter pindex bound to: 1 - type: integer 
+	Parameter fw bound to: 10 - type: integer 
+	Parameter fw bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'quadratic_func' declared at 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:26' bound to instance 'DSP' of component 'quadratic_func' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/DspWrapper.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'quadratic_func' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:53]
+	Parameter fw bound to: 10 - type: integer 
+WARNING: [Synth 8-614] signal 'x_in' is read in the process but is not in the sensitivity list [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:92]
+WARNING: [Synth 8-614] signal 'zeros' is read in the process but is not in the sensitivity list [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:92]
+WARNING: [Synth 8-614] signal 'ones' is read in the process but is not in the sensitivity list [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'quadratic_func' (1#1) [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:53]
+	Parameter pindex bound to: 1 - type: integer 
+	Parameter regCount bound to: 2 - type: integer 
+	Parameter slaveCount bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'APBSlaveIF' declared at 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/APBSlaveIF.vhd:33' bound to instance 'APB_INTERFACE' of component 'APBSlaveIF' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/DspWrapper.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'APBSlaveIF' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/APBSlaveIF.vhd:61]
+	Parameter pindex bound to: 1 - type: integer 
+	Parameter regCount bound to: 2 - type: integer 
+	Parameter slaveCount bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'PADDR' is read in the process but is not in the sensitivity list [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/APBSlaveIF.vhd:80]
+WARNING: [Synth 8-614] signal 'REG_ADDR' is read in the process but is not in the sensitivity list [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/APBSlaveIF.vhd:80]
+WARNING: [Synth 8-4767] Trying to implement RAM 'regArray_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "regArray_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'APBSlaveIF' (2#1) [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/APBSlaveIF.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'DspWrapper' (3#1) [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/DspWrapper.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'ldis_task1_bd_DspWrapper_0_0' (4#1) [d:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/bd/ldis_task1_bd/ip/ldis_task1_bd_DspWrapper_0_0/synth/ldis_task1_bd_DspWrapper_0_0.vhd:77]
+WARNING: [Synth 8-3331] design APBSlaveIF has unconnected port PSEL[3]
+WARNING: [Synth 8-3331] design APBSlaveIF has unconnected port PSEL[2]
+WARNING: [Synth 8-3331] design APBSlaveIF has unconnected port PSEL[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 467.711 ; gain = 161.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 467.711 ; gain = 161.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 467.711 ; gain = 161.520
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 794.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 794.930 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 796.898 ; gain = 1.969
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 796.898 ; gain = 490.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 796.898 ; gain = 490.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 796.898 ; gain = 490.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:166]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:140]
+INFO: [Synth 8-802] inferred FSM for state register 'regInterfaceState_reg' in module 'APBSlaveIF'
+INFO: [Synth 8-5545] ROM "REG_RDY" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "regInterfaceState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regInterfaceState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'StateWrapper_reg' in module 'DspWrapper'
+INFO: [Synth 8-5545] ROM "REG_IN0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "StateWrapper" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+  statereginterface_idle |                              000 | 00000000000000000000000000000000
+statereginterface_waitforread |                              001 | 00000000000000000000000000000100
+statereginterface_waitforwrite |                              010 | 00000000000000000000000000000101
+ statereginterface_ready |                              011 | 00000000000000000000000000000010
+statereginterface_buffer |                              100 | 00000000000000000000000000000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'regInterfaceState_reg' using encoding 'sequential' in module 'APBSlaveIF'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+       statewrapper_init |                              000 | 00000000000000000000000000000000
+      statewrapper_write |                              001 | 00000000000000000000000000000001
+statewrapper_waitonwrite |                              010 | 00000000000000000000000000000010
+       statewrapper_read |                              011 | 00000000000000000000000000000011
+ statewrapper_waitonread |                              100 | 00000000000000000000000000000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StateWrapper_reg' using encoding 'sequential' in module 'DspWrapper'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 796.898 ; gain = 490.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     66 Bit       Adders := 1     
++---Registers : 
+	               66 Bit    Registers := 2     
+	               48 Bit    Registers := 3     
+	               32 Bit    Registers := 5     
+	               22 Bit    Registers := 3     
+	               18 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                22x44  Multipliers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+	   5 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     22 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module quadratic_func 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     66 Bit       Adders := 1     
++---Registers : 
+	               66 Bit    Registers := 2     
+	               48 Bit    Registers := 3     
+	               22 Bit    Registers := 3     
+	               18 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Multipliers : 
+	                22x44  Multipliers := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+Module APBSlaveIF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+	   5 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+Module DspWrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      3 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'U0/DSP/coeff_a_reg_reg[21:0]' into 'U0/DSP/coeff_c_reg_reg[21:0]' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:109]
+INFO: [Synth 8-4471] merging register 'U0/DSP/coeff_b_reg_reg[21:0]' into 'U0/DSP/coeff_b_reg_reg[21:0]' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:110]
+INFO: [Synth 8-3936] Found unconnected internal register 'U0/DSP/sum_reg_reg' and it is trimmed from '66' to '34' bits. [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:198]
+INFO: [Synth 8-3936] Found unconnected internal register 'U0/DSP/x2_a_reg' and it is trimmed from '66' to '34' bits. [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:153]
+INFO: [Synth 8-3936] Found unconnected internal register 'U0/DSP/x2_reg' and it is trimmed from '48' to '17' bits. [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:140]
+INFO: [Synth 8-3936] Found unconnected internal register 'U0/DSP/x2_reg' and it is trimmed from '48' to '17' bits. [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:140]
+INFO: [Synth 8-3936] Found unconnected internal register 'U0/DSP/x1_b_reg' and it is trimmed from '48' to '7' bits. [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:166]
+INFO: [Synth 8-3936] Found unconnected internal register 'U0/DSP/x1_b_reg' and it is trimmed from '48' to '17' bits. [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:166]
+INFO: [Synth 8-3936] Found unconnected internal register 'U0/DSP/coeff_c_del_reg' and it is trimmed from '22' to '14' bits. [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:127]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:153]
+WARNING: [Synth 8-6014] Unused sequential element U0/DSP/x2_reg was removed.  [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd:140]
+DSP Report: Generating DSP U0/DSP/multOp, operation Mode is: (A:0x649)'*B2.
+DSP Report: register B is absorbed into DSP U0/DSP/multOp.
+DSP Report: register U0/DSP/coeff_b_reg_reg is absorbed into DSP U0/DSP/multOp.
+DSP Report: operator U0/DSP/multOp is absorbed into DSP U0/DSP/multOp.
+DSP Report: operator U0/DSP/multOp is absorbed into DSP U0/DSP/multOp.
+DSP Report: Generating DSP U0/DSP/multOp, operation Mode is: A*B.
+DSP Report: operator U0/DSP/multOp is absorbed into DSP U0/DSP/multOp.
+DSP Report: operator U0/DSP/multOp is absorbed into DSP U0/DSP/multOp.
+DSP Report: Generating DSP U0/DSP/multOp, operation Mode is: (A:0x0)'*B2.
+DSP Report: register B is absorbed into DSP U0/DSP/multOp.
+DSP Report: register U0/DSP/coeff_c_reg_reg is absorbed into DSP U0/DSP/multOp.
+DSP Report: operator U0/DSP/multOp is absorbed into DSP U0/DSP/multOp.
+DSP Report: operator U0/DSP/multOp is absorbed into DSP U0/DSP/multOp.
+DSP Report: Generating DSP U0/DSP/x2_a_reg, operation Mode is: (PCIN>>17)+(A:0x0)'*B2.
+DSP Report: register B is absorbed into DSP U0/DSP/x2_a_reg.
+DSP Report: register U0/DSP/coeff_c_reg_reg is absorbed into DSP U0/DSP/x2_a_reg.
+DSP Report: register U0/DSP/x2_a_reg is absorbed into DSP U0/DSP/x2_a_reg.
+DSP Report: operator U0/DSP/multOp is absorbed into DSP U0/DSP/x2_a_reg.
+DSP Report: operator U0/DSP/multOp is absorbed into DSP U0/DSP/x2_a_reg.
+INFO: [Synth 8-3917] design ldis_task1_bd_DspWrapper_0_0 has port PREADY driven by constant 1
+WARNING: [Synth 8-3331] design ldis_task1_bd_DspWrapper_0_0 has unconnected port PSEL[3]
+WARNING: [Synth 8-3331] design ldis_task1_bd_DspWrapper_0_0 has unconnected port PSEL[2]
+WARNING: [Synth 8-3331] design ldis_task1_bd_DspWrapper_0_0 has unconnected port PSEL[0]
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[21]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[20]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[19]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[18]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[17]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[16]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[15]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[14]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[13]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[12]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[11]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[8]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[7]' (FD) to 'U0/DSP/coeff_c_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[0]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[14]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[15]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[16]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[17]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[18]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[19]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[20]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[21]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[1]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[2]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[3]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[4]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[5]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[6]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[7]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[8]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[9]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[10]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[11]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[12]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_reg_reg[13]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[10]' (FD) to 'U0/DSP/coeff_b_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[9]' (FD) to 'U0/DSP/coeff_b_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[6]' (FD) to 'U0/DSP/coeff_b_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'B[3]' (FD) to 'B[0]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[0]' (FD) to 'U0/DSP/coeff_b_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[2]' (FD) to 'U0/DSP/coeff_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[5]' (FD) to 'U0/DSP/coeff_b_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'B[0]' (FD) to 'B[1]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_b_reg_reg[4]' (FD) to 'U0/DSP/coeff_b_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'B[1]' (FD) to 'B[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/DSP/coeff_b_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'B[2]' (FD) to 'B[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/DSP/coeff_b_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[0]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[1]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[2]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[3]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[4]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[5]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[6]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[7]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[8]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[9]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[10]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[11]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[12]' (FD) to 'U0/DSP/coeff_c_del_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/DSP/coeff_c_del_reg[13]' (FD) to 'U0/DSP/coeff_b_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_ADDR_reg[0]' (FDRE) to 'U0/REG_ADDR_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[14]' (FDRE) to 'U0/REG_IN_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[15]' (FDRE) to 'U0/REG_IN_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[16]' (FDRE) to 'U0/REG_IN_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[17]' (FDRE) to 'U0/REG_IN_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[18]' (FDRE) to 'U0/REG_IN_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[19]' (FDRE) to 'U0/REG_IN_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[20]' (FDRE) to 'U0/REG_IN_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[21]' (FDRE) to 'U0/REG_IN_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[22]' (FDRE) to 'U0/REG_IN_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[23]' (FDRE) to 'U0/REG_IN_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[24]' (FDRE) to 'U0/REG_IN_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[25]' (FDRE) to 'U0/REG_IN_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[26]' (FDRE) to 'U0/REG_IN_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[27]' (FDRE) to 'U0/REG_IN_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[28]' (FDRE) to 'U0/REG_IN_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[29]' (FDRE) to 'U0/REG_IN_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/REG_IN_reg[30]' (FDRE) to 'U0/REG_IN_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/REG_IN_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/DSP/coeff_b_reg_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[47]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[46]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[45]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[44]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[43]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[42]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[41]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[40]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[39]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[38]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[37]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[36]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[35]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[34]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[33]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[32]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[31]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[30]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[29]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[28]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[27]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[26]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[25]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[24]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[23]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[22]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[21]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[20]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[19]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[18]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[17]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[8]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[7]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[6]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[5]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[4]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[3]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[2]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[1]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/DSP/x2_a_reg[0]) is unused and will be removed from module ldis_task1_bd_DspWrapper_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 796.898 ; gain = 490.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|quadratic_func               | (A:0x649)'*B2          | 22     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|quadratic_func               | A*B                    | 22     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ldis_task1_bd_DspWrapper_0_0 | (A:0x0)'*B2            | 22     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|ldis_task1_bd_DspWrapper_0_0 | (PCIN>>17)+(A:0x0)'*B2 | 22     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++-----------------------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 850.703 ; gain = 544.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 850.703 ; gain = 544.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 872.063 ; gain = 565.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 872.063 ; gain = 565.871
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 872.063 ; gain = 565.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 872.063 ; gain = 565.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 872.063 ; gain = 565.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 872.063 ; gain = 565.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 872.063 ; gain = 565.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    29|
+|2     |DSP48E1_1 |     1|
+|3     |DSP48E1_2 |     1|
+|4     |DSP48E1_3 |     1|
+|5     |DSP48E1_4 |     1|
+|6     |LUT1      |     4|
+|7     |LUT2      |    71|
+|8     |LUT3      |   103|
+|9     |LUT4      |    24|
+|10    |LUT5      |    17|
+|11    |LUT6      |    35|
+|12    |FDRE      |   212|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------+---------------+------+
+|      |Instance          |Module         |Cells |
++------+------------------+---------------+------+
+|1     |top               |               |   499|
+|2     |  U0              |DspWrapper     |   498|
+|3     |    APB_INTERFACE |APBSlaveIF     |   266|
+|4     |    DSP           |quadratic_func |   195|
++------+------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 872.063 ; gain = 565.871
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 872.063 ; gain = 236.684
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 872.063 ; gain = 565.871
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 872.063 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+166 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 872.063 ; gain = 579.020
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 872.063 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.runs/ldis_task1_bd_DspWrapper_0_0_synth_1/ldis_task1_bd_DspWrapper_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 872.063 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.runs/ldis_task1_bd_DspWrapper_0_0_synth_1/ldis_task1_bd_DspWrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ldis_task1_bd_DspWrapper_0_0_utilization_synth.rpt -pb ldis_task1_bd_DspWrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 20 16:39:15 2019...

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"ldis_task1_bd": {
+			"proto_instances": {
+			}
+		}
+	}
+}

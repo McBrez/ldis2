@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ldis_task1_DAFR.srcs/sources_1/new/SampleController.vhd" \
+"../../../../ldis_task1_DAFR.srcs/sources_1/new/Sampling_Interface.vhd" \
+"../../../../ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" \
+"../../../../ldis_task1_DAFR.srcs/SPI_SIM/new/Sampling_Interface_TB.vhd" \
+
+# Do not sort compile order
+nosort

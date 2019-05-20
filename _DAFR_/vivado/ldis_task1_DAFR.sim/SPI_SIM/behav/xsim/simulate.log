@@ -1,0 +1,33 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/SampleController.vhd" Line 133
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/SampleController.vhd" Line 142
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/SampleController.vhd" Line 184
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 324
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 325
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 329
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 330
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 338
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 339
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 347
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 348
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 399
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 400
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 401
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 416
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 418
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 419
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 420
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 421
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 422
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 425
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 426
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 427
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 428
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 429
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 432
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 433
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 439
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 440
+Stopped at time : 1510 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/spi_master_slave/spi_master.vhd" Line 441
+Stopped at time : 2310 ns : File "D:/DEV/ldis_task1/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/SampleController.vhd" Line 133

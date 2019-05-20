@@ -1,0 +1,42 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8c3a5d0171b241e1b1c9f1be137ab8c8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ClkGen_behav xil_defaultlib.ClkGen xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.CTRLWrapper [ctrlwrapper_default]
+Compiling architecture ldis_task1_bd_ctrlwrapper_0_0_arch of entity xil_defaultlib.ldis_task1_bd_CTRLWrapper_0_0 [ldis_task1_bd_ctrlwrapper_0_0_de...]
+Compiling architecture rtl of entity xil_defaultlib.quadratic_func [quadratic_func_default]
+Compiling architecture behavioral of entity xil_defaultlib.APBSlaveIF [\APBSlaveIF(pindex=1,regcount=2,...]
+Compiling architecture behavioral of entity xil_defaultlib.DspWrapper [\DspWrapper(pindex=1)\]
+Compiling architecture ldis_task1_bd_dspwrapper_0_0_arch of entity xil_defaultlib.ldis_task1_bd_DspWrapper_0_0 [ldis_task1_bd_dspwrapper_0_0_def...]
+Compiling architecture behavioral of entity xil_defaultlib.SPI_If [\SPI_If(sysclk_frequency_hz=5000...]
+Compiling architecture behavioral of entity xil_defaultlib.ADXL362Ctrl [\ADXL362Ctrl(sysclk_frequency_hz...]
+Compiling architecture behavioral of entity xil_defaultlib.APBSlaveIF [\APBSlaveIF(regcount=2,slavecoun...]
+Compiling architecture behavioral of entity xil_defaultlib.SamplingWrapper [\SamplingWrapper(slavecount=4)\]
+Compiling architecture ldis_task1_bd_samplingwrapper_0_0_arch of entity xil_defaultlib.ldis_task1_bd_SamplingWrapper_0_0 [ldis_task1_bd_samplingwrapper_0_...]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=17,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.BUFGCE
+Compiling module unisims_ver.BUFH
+Compiling module xil_defaultlib.ldis_task1_bd_clk_wiz_0_0_clk_wi...
+Compiling module xil_defaultlib.ldis_task1_bd_clk_wiz_0_0
+Compiling architecture ldis_task1_bd_ila_0_0_arch of entity xil_defaultlib.ldis_task1_bd_ila_0_0 [ldis_task1_bd_ila_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.ldis_task1_bd [ldis_task1_bd_default]
+Compiling architecture structure of entity xil_defaultlib.ldis_task1_bd_wrapper [ldis_task1_bd_wrapper_default]
+Compiling architecture behav of entity xil_defaultlib.clkgen
+Built simulation snapshot ClkGen_behav

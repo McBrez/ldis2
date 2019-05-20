@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Mon May 13 21:25:57 2019
+--Date        : Mon May 20 17:46:33 2019
 --Host        : FREISMUTHDESK running 64-bit major release  (build 9200)
 --Command     : generate_target ldis_task1_bd_wrapper.bd
 --Design      : ldis_task1_bd_wrapper

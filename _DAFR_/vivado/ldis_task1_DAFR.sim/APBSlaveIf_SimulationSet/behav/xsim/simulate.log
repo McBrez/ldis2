@@ -1,0 +1,8 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Error: Sim finished.
+Time: 300 ns  Iteration: 0  Process: /APBSlaveIF_TB/STIMULUS  File: D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/APBSlaveIf_SimulationSet/new/APBSlaveIF_TB.vhd
+Error: Sim finished.
+Time: 600 ns  Iteration: 0  Process: /APBSlaveIF_TB/STIMULUS  File: D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/APBSlaveIf_SimulationSet/new/APBSlaveIF_TB.vhd
+Error: Sim finished.
+Time: 900 ns  Iteration: 0  Process: /APBSlaveIF_TB/STIMULUS  File: D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/APBSlaveIf_SimulationSet/new/APBSlaveIF_TB.vhd

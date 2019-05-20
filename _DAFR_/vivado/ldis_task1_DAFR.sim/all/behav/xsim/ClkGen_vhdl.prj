@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ldis_task1_DAFR.srcs/sources_1/imports/Desktop/ADXL362Ctrl.vhd" \
+"../../../../ldis_task1_DAFR.srcs/sources_1/new/APBSlaveIF.vhd" \
+"../../../../ldis_task1_DAFR.srcs/sources_1/imports/hdl/SPI_If.vhd" \
+"../../../../ldis_task1_DAFR.srcs/sources_1/new/SamplingWrapper.vhd" \
+"../../../../ldis_task1_DAFR.srcs/sources_1/new/CTRLWrapper.vhd" \
+"../../../../ldis_task1_DAFR.srcs/sources_1/imports/vhdl/quadratic_func.vhd" \
+"../../../../ldis_task1_DAFR.srcs/sources_1/new/DspWrapper.vhd" \
+"../../../../ldis_task1_DAFR.ip_user_files/bd/ldis_task1_bd/sim/ldis_task1_bd.vhd" \
+"../../../../ldis_task1_DAFR.ip_user_files/bd/ldis_task1_bd/ip/ldis_task1_bd_SamplingWrapper_0_0/sim/ldis_task1_bd_SamplingWrapper_0_0.vhd" \
+"../../../../ldis_task1_DAFR.ip_user_files/bd/ldis_task1_bd/ip/ldis_task1_bd_CTRLWrapper_0_0/sim/ldis_task1_bd_CTRLWrapper_0_0.vhd" \
+"../../../../ldis_task1_DAFR.ip_user_files/bd/ldis_task1_bd/ip/ldis_task1_bd_ila_0_0/sim/ldis_task1_bd_ila_0_0.vhd" \
+"../../../../ldis_task1_DAFR.ip_user_files/bd/ldis_task1_bd/ip/ldis_task1_bd_DspWrapper_0_0/sim/ldis_task1_bd_DspWrapper_0_0.vhd" \
+"../../../../ldis_task1_DAFR.srcs/sources_1/bd/ldis_task1_bd/hdl/ldis_task1_bd_wrapper.vhd" \
+"../../../../ldis_task1_DAFR.srcs/all/new/ClkGen.vhd" \
+
+# Do not sort compile order
+nosort

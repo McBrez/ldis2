@@ -10,13 +10,11 @@
     },
     "design_tree": {
       "clk_wiz_0": "",
-      "ADXL362Ctrl_0": "",
-      "xlconstant_0": "",
-      "xlconstant_1": "",
-      "xlconstant_2": "",
-      "xlconstant_3": "",
-      "quadratic_func_0": "",
-      "angle_encoder_0": ""
+      "ila_0": "",
+      "CTRLWrapper_0": "",
+      "SamplingWrapper_0": "",
+      "DspWrapper_0": "",
+      "OutputWrapper_0": ""
     },
     "ports": {
       "CLK": {
@@ -99,13 +97,13 @@
             "value": "BUFGCE"
           },
           "CLKOUT1_JITTER": {
-            "value": "446.763"
+            "value": "203.457"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "313.282"
+            "value": "155.540"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "10"
+            "value": "50"
           },
           "CLKOUT2_DRIVES": {
             "value": "BUFGCE"
@@ -132,19 +130,19 @@
             "value": "FDBK_AUTO"
           },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "41"
+            "value": "17"
           },
           "MMCM_CLKIN2_PERIOD": {
             "value": "10.000"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "82"
+            "value": "17"
           },
           "MMCM_COMPENSATION": {
             "value": "ZHOLD"
           },
           "MMCM_DIVCLK_DIVIDE": {
-            "value": "5"
+            "value": "2"
           },
           "PRIMITIVE": {
             "value": "PLL"
@@ -166,25 +164,103 @@
           }
         }
       },
-      "ADXL362Ctrl_0": {
-        "vlnv": "xilinx.com:module_ref:ADXL362Ctrl:1.0",
-        "xci_name": "ldis_task1_bd_ADXL362Ctrl_0_0",
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "ldis_task1_bd_ila_0_0",
         "parameters": {
-          "SYSCLK_FREQUENCY_HZ": {
-            "value": "10000000"
+          "ALL_PROBE_SAME_MU_CNT": {
+            "value": "2"
+          },
+          "C_ADV_TRIGGER": {
+            "value": "true"
+          },
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_EN_STRG_QUAL": {
+            "value": "1"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "11"
+          },
+          "C_PROBE0_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE10_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE10_WIDTH": {
+            "value": "16"
+          },
+          "C_PROBE1_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE2_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE3_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE4_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE5_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE6_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "3"
+          },
+          "C_PROBE7_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE8_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE8_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE9_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE9_WIDTH": {
+            "value": "14"
+          }
+        }
+      },
+      "CTRLWrapper_0": {
+        "vlnv": "xilinx.com:module_ref:CTRLWrapper:1.0",
+        "xci_name": "ldis_task1_bd_CTRLWrapper_0_0",
+        "parameters": {
+          "slaveCount": {
+            "value": "4"
           }
         },
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "ADXL362Ctrl",
+          "ref_name": "CTRLWrapper",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "RESET": {
-            "type": "rst",
-            "direction": "I"
-          },
-          "SYSCLK": {
+          "CLK": {
+            "type": "clk",
             "direction": "I",
             "parameters": {
               "CLK_DOMAIN": {
@@ -192,7 +268,7 @@
                 "value_src": "ip_prop"
               },
               "FREQ_HZ": {
-                "value": "10000000",
+                "value": "50000000",
                 "value_src": "ip_prop"
               },
               "PHASE": {
@@ -201,27 +277,130 @@
               }
             }
           },
-          "ACCEL_X": {
+          "PWDATA": {
             "direction": "O",
-            "left": "11",
+            "left": "31",
             "right": "0"
           },
-          "ACCEL_Y": {
+          "PADDR": {
             "direction": "O",
-            "left": "11",
+            "left": "31",
             "right": "0"
           },
-          "ACCEL_Z": {
+          "PWRITE": {
+            "direction": "O"
+          },
+          "PSEL": {
             "direction": "O",
-            "left": "11",
+            "left": "3",
             "right": "0"
           },
-          "ACCEL_TMP": {
-            "direction": "O",
-            "left": "11",
+          "PENABLE": {
+            "direction": "O"
+          },
+          "PRDATA_S1": {
+            "direction": "I",
+            "left": "31",
             "right": "0"
           },
-          "Data_Ready": {
+          "PRDATA_S2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "PRDATA_S3": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "PRDATA_S4": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "PREADY_S1": {
+            "direction": "I"
+          },
+          "PREADY_S2": {
+            "direction": "I"
+          },
+          "PREADY_S3": {
+            "direction": "I"
+          },
+          "PREADY_S4": {
+            "direction": "I"
+          },
+          "DEBUG_ACC_VAL": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "DEBUG_DSP_VAL": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "SamplingWrapper_0": {
+        "vlnv": "xilinx.com:module_ref:SamplingWrapper:1.0",
+        "xci_name": "ldis_task1_bd_SamplingWrapper_0_0",
+        "parameters": {
+          "slaveCount": {
+            "value": "4"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "SamplingWrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "PWDATA": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "PADDR": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "PWRITE": {
+            "direction": "I"
+          },
+          "PSEL": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "PENABLE": {
+            "direction": "I"
+          },
+          "PRDATA": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "PREADY": {
             "direction": "O"
           },
           "SCLK": {
@@ -235,59 +414,48 @@
           },
           "SS": {
             "direction": "O"
-          }
-        }
-      },
-      "xlconstant_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "ldis_task1_bd_xlconstant_0_0"
-      },
-      "xlconstant_1": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "ldis_task1_bd_xlconstant_0_1",
-        "parameters": {
-          "CONST_VAL": {
-            "value": "0"
           },
-          "CONST_WIDTH": {
-            "value": "22"
-          }
-        }
-      },
-      "xlconstant_2": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "ldis_task1_bd_xlconstant_0_2",
-        "parameters": {
-          "CONST_VAL": {
-            "value": "0b11001001001"
+          "DBG_REG_IN": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
           },
-          "CONST_WIDTH": {
-            "value": "22"
-          }
-        }
-      },
-      "xlconstant_3": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "ldis_task1_bd_xlconstant_0_3",
-        "parameters": {
-          "CONST_VAL": {
-            "value": "0"
+          "DBG_REG_OUT": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
           },
-          "CONST_WIDTH": {
-            "value": "22"
+          "DBG_REG_RW": {
+            "direction": "O"
+          },
+          "DBG_REG_WREN": {
+            "direction": "O"
+          },
+          "DBG_REG_ADDR": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "DBG_REG_RDY": {
+            "direction": "O"
           }
         }
       },
-      "quadratic_func_0": {
-        "vlnv": "xilinx.com:module_ref:quadratic_func:1.0",
-        "xci_name": "ldis_task1_bd_quadratic_func_0_0",
+      "DspWrapper_0": {
+        "vlnv": "xilinx.com:module_ref:DspWrapper:1.0",
+        "xci_name": "ldis_task1_bd_DspWrapper_0_0",
+        "parameters": {
+          "pindex": {
+            "value": "1"
+          }
+        },
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "quadratic_func",
+          "ref_name": "DspWrapper",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "clk": {
+          "CLK": {
             "type": "clk",
             "direction": "I",
             "parameters": {
@@ -296,7 +464,7 @@
                 "value_src": "ip_prop"
               },
               "FREQ_HZ": {
-                "value": "10000000",
+                "value": "50000000",
                 "value_src": "ip_prop"
               },
               "PHASE": {
@@ -305,56 +473,87 @@
               }
             }
           },
-          "en": {
+          "PWDATA": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "PADDR": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "PWRITE": {
             "direction": "I"
           },
-          "coeff_a": {
+          "PSEL": {
             "direction": "I",
-            "left": "21",
+            "left": "3",
             "right": "0"
           },
-          "coeff_b": {
-            "direction": "I",
-            "left": "21",
+          "PENABLE": {
+            "direction": "I"
+          },
+          "PRDATA": {
+            "direction": "O",
+            "left": "31",
             "right": "0"
           },
-          "coeff_c": {
-            "direction": "I",
-            "left": "21",
-            "right": "0"
+          "PREADY": {
+            "direction": "O"
           },
-          "x_in": {
-            "direction": "I",
+          "x_in_dbg": {
+            "direction": "O",
             "left": "11",
             "right": "0"
           },
-          "y_out": {
-            "direction": "O",
-            "left": "65",
-            "right": "0"
-          },
-          "y_trunc_out": {
+          "y_trunc_out_dbg": {
             "direction": "O",
             "left": "13",
             "right": "0"
+          },
+          "DBG_REG_IN": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "DBG_REG_OUT": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "DBG_REG_RW": {
+            "direction": "O"
+          },
+          "DBG_REG_WREN": {
+            "direction": "O"
+          },
+          "DBG_REG_ADDR": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "DBG_REG_RDY": {
+            "direction": "O"
           }
         }
       },
-      "angle_encoder_0": {
-        "vlnv": "xilinx.com:module_ref:angle_encoder:1.0",
-        "xci_name": "ldis_task1_bd_angle_encoder_0_1",
+      "OutputWrapper_0": {
+        "vlnv": "xilinx.com:module_ref:OutputWrapper:1.0",
+        "xci_name": "ldis_task1_bd_OutputWrapper_0_0",
+        "parameters": {
+          "pindex": {
+            "value": "2"
+          }
+        },
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "angle_encoder",
+          "ref_name": "OutputWrapper",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "angle_i": {
-            "direction": "I",
-            "left": "13",
-            "right": "0"
-          },
-          "clk_i": {
+          "CLK": {
+            "type": "clk",
             "direction": "I",
             "parameters": {
               "CLK_DOMAIN": {
@@ -362,7 +561,7 @@
                 "value_src": "ip_prop"
               },
               "FREQ_HZ": {
-                "value": "10000000",
+                "value": "50000000",
                 "value_src": "ip_prop"
               },
               "PHASE": {
@@ -371,10 +570,68 @@
               }
             }
           },
-          "bar_o": {
+          "PWDATA": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "PADDR": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "PWRITE": {
+            "direction": "I"
+          },
+          "PSEL": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "PENABLE": {
+            "direction": "I"
+          },
+          "PRDATA": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "PREADY": {
+            "direction": "O"
+          },
+          "LED_BAR": {
             "direction": "O",
             "left": "15",
             "right": "0"
+          },
+          "angle_o": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "DBG_REG_IN": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "DBG_REG_OUT": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "DBG_REG_RW": {
+            "direction": "O"
+          },
+          "DBG_REG_WREN": {
+            "direction": "O"
+          },
+          "DBG_REG_ADDR": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "DBG_REG_RDY": {
+            "direction": "O"
           }
         }
       }
@@ -386,84 +643,176 @@
           "clk_wiz_0/clk_in1"
         ]
       },
-      "Reset_1": {
+      "clk_wiz_0_clk_out1": {
         "ports": [
-          "Reset",
-          "ADXL362Ctrl_0/RESET"
+          "clk_wiz_0/clk_out1",
+          "ila_0/clk",
+          "CTRLWrapper_0/CLK",
+          "SamplingWrapper_0/CLK",
+          "DspWrapper_0/CLK",
+          "OutputWrapper_0/CLK"
+        ]
+      },
+      "SamplingWrapper_0_SCLK": {
+        "ports": [
+          "SamplingWrapper_0/SCLK",
+          "SCLK"
+        ]
+      },
+      "SamplingWrapper_0_MOSI": {
+        "ports": [
+          "SamplingWrapper_0/MOSI",
+          "MOSI"
+        ]
+      },
+      "SamplingWrapper_0_SS": {
+        "ports": [
+          "SamplingWrapper_0/SS",
+          "CS"
         ]
       },
       "MISO_1": {
         "ports": [
           "MISO",
-          "ADXL362Ctrl_0/MISO"
+          "SamplingWrapper_0/MISO"
         ]
       },
-      "ADXL362Ctrl_0_SCLK": {
+      "CTRLWrapper_0_PWDATA": {
         "ports": [
-          "ADXL362Ctrl_0/SCLK",
-          "SCLK"
+          "CTRLWrapper_0/PWDATA",
+          "SamplingWrapper_0/PWDATA",
+          "DspWrapper_0/PWDATA",
+          "OutputWrapper_0/PWDATA"
         ]
       },
-      "ADXL362Ctrl_0_MOSI": {
+      "CTRLWrapper_0_PADDR": {
         "ports": [
-          "ADXL362Ctrl_0/MOSI",
-          "MOSI"
+          "CTRLWrapper_0/PADDR",
+          "SamplingWrapper_0/PADDR",
+          "DspWrapper_0/PADDR",
+          "OutputWrapper_0/PADDR"
         ]
       },
-      "ADXL362Ctrl_0_SS": {
+      "CTRLWrapper_0_PWRITE": {
         "ports": [
-          "ADXL362Ctrl_0/SS",
-          "CS"
+          "CTRLWrapper_0/PWRITE",
+          "SamplingWrapper_0/PWRITE",
+          "DspWrapper_0/PWRITE",
+          "OutputWrapper_0/PWRITE"
         ]
       },
-      "xlconstant_0_dout": {
+      "CTRLWrapper_0_PSEL": {
         "ports": [
-          "xlconstant_0/dout",
-          "quadratic_func_0/en"
+          "CTRLWrapper_0/PSEL",
+          "ila_0/probe8",
+          "SamplingWrapper_0/PSEL",
+          "DspWrapper_0/PSEL",
+          "OutputWrapper_0/PSEL"
         ]
       },
-      "xlconstant_1_dout": {
+      "CTRLWrapper_0_PENABLE": {
         "ports": [
-          "xlconstant_1/dout",
-          "quadratic_func_0/coeff_a"
+          "CTRLWrapper_0/PENABLE",
+          "SamplingWrapper_0/PENABLE",
+          "DspWrapper_0/PENABLE",
+          "OutputWrapper_0/PENABLE"
         ]
       },
-      "xlconstant_2_dout": {
+      "SamplingWrapper_0_PRDATA": {
         "ports": [
-          "xlconstant_2/dout",
-          "quadratic_func_0/coeff_b"
+          "SamplingWrapper_0/PRDATA",
+          "CTRLWrapper_0/PRDATA_S1"
         ]
       },
-      "xlconstant_3_dout": {
+      "DspWrapper_0_PRDATA": {
         "ports": [
-          "xlconstant_3/dout",
-          "quadratic_func_0/coeff_c"
+          "DspWrapper_0/PRDATA",
+          "CTRLWrapper_0/PRDATA_S2"
         ]
       },
-      "clk_wiz_0_clk_out1": {
+      "CTRLWrapper_0_DEBUG_ACC_VAL": {
         "ports": [
-          "clk_wiz_0/clk_out1",
-          "ADXL362Ctrl_0/SYSCLK",
-          "quadratic_func_0/clk",
-          "angle_encoder_0/clk_i"
+          "CTRLWrapper_0/DEBUG_ACC_VAL",
+          "ila_0/probe0"
         ]
       },
-      "angle_encoder_0_bar_o": {
+      "CTRLWrapper_0_DEBUG_DSP_VAL": {
         "ports": [
-          "angle_encoder_0/bar_o",
-          "LED_BAR"
+          "CTRLWrapper_0/DEBUG_DSP_VAL",
+          "ila_0/probe1"
         ]
       },
-      "ADXL362Ctrl_0_ACCEL_Y": {
+      "DspWrapper_0_PREADY": {
         "ports": [
-          "ADXL362Ctrl_0/ACCEL_Y",
-          "quadratic_func_0/x_in"
+          "DspWrapper_0/PREADY",
+          "CTRLWrapper_0/PREADY_S2"
         ]
       },
-      "quadratic_func_0_y_trunc_out": {
+      "SamplingWrapper_0_PREADY": {
         "ports": [
-          "quadratic_func_0/y_trunc_out",
-          "angle_encoder_0/angle_i"
+          "SamplingWrapper_0/PREADY",
+          "CTRLWrapper_0/PREADY_S1"
+        ]
+      },
+      "OutputWrapper_0_LED_BAR": {
+        "ports": [
+          "OutputWrapper_0/LED_BAR",
+          "LED_BAR",
+          "ila_0/probe10"
+        ]
+      },
+      "OutputWrapper_0_PRDATA": {
+        "ports": [
+          "OutputWrapper_0/PRDATA",
+          "CTRLWrapper_0/PRDATA_S3"
+        ]
+      },
+      "OutputWrapper_0_PREADY": {
+        "ports": [
+          "OutputWrapper_0/PREADY",
+          "CTRLWrapper_0/PREADY_S3"
+        ]
+      },
+      "OutputWrapper_0_angle_o": {
+        "ports": [
+          "OutputWrapper_0/angle_o",
+          "ila_0/probe9"
+        ]
+      },
+      "OutputWrapper_0_DBG_REG_IN": {
+        "ports": [
+          "OutputWrapper_0/DBG_REG_IN",
+          "ila_0/probe2"
+        ]
+      },
+      "OutputWrapper_0_DBG_REG_OUT": {
+        "ports": [
+          "OutputWrapper_0/DBG_REG_OUT",
+          "ila_0/probe3"
+        ]
+      },
+      "OutputWrapper_0_DBG_REG_RW": {
+        "ports": [
+          "OutputWrapper_0/DBG_REG_RW",
+          "ila_0/probe4"
+        ]
+      },
+      "OutputWrapper_0_DBG_REG_WREN": {
+        "ports": [
+          "OutputWrapper_0/DBG_REG_WREN",
+          "ila_0/probe5"
+        ]
+      },
+      "OutputWrapper_0_DBG_REG_ADDR": {
+        "ports": [
+          "OutputWrapper_0/DBG_REG_ADDR",
+          "ila_0/probe6"
+        ]
+      },
+      "OutputWrapper_0_DBG_REG_RDY": {
+        "ports": [
+          "OutputWrapper_0/DBG_REG_RDY",
+          "ila_0/probe7"
         ]
       }
     }

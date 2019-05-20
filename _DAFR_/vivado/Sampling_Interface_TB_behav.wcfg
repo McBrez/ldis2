@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Sampling_Interface_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Sampling_Interface_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="11313527776fs"></ZoomStartTime>
+      <ZoomEndTime time="12737294445fs"></ZoomEndTime>
+      <Cursor1Time time="11860000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="191"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/Sampling_Interface_TB/MOSI_TB" type="logic">
+      <obj_property name="ElementShortName">MOSI_TB</obj_property>
+      <obj_property name="ObjectShortName">MOSI_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/MISO_TB" type="logic">
+      <obj_property name="ElementShortName">MISO_TB</obj_property>
+      <obj_property name="ObjectShortName">MISO_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/SPI_INT1_TB" type="logic">
+      <obj_property name="ElementShortName">SPI_INT1_TB</obj_property>
+      <obj_property name="ObjectShortName">SPI_INT1_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/CS_TB" type="logic">
+      <obj_property name="ElementShortName">CS_TB</obj_property>
+      <obj_property name="ObjectShortName">CS_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/SCLK_TB" type="logic">
+      <obj_property name="ElementShortName">SCLK_TB</obj_property>
+      <obj_property name="ObjectShortName">SCLK_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/RESET_TB" type="logic">
+      <obj_property name="ElementShortName">RESET_TB</obj_property>
+      <obj_property name="ObjectShortName">RESET_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/CLK_TB" type="logic">
+      <obj_property name="ElementShortName">CLK_TB</obj_property>
+      <obj_property name="ObjectShortName">CLK_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/STREAM_TB" type="array">
+      <obj_property name="ElementShortName">STREAM_TB[11:0]</obj_property>
+      <obj_property name="ObjectShortName">STREAM_TB[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider25">
+      <obj_property name="label">Controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/DUT/Controller/di_req_i" type="logic">
+      <obj_property name="ElementShortName">di_req_i</obj_property>
+      <obj_property name="ObjectShortName">di_req_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/DUT/Controller/data_o" type="array">
+      <obj_property name="ElementShortName">data_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/DUT/Controller/data_i" type="array">
+      <obj_property name="ElementShortName">data_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/DUT/Controller/wren_o" type="logic">
+      <obj_property name="ElementShortName">wren_o</obj_property>
+      <obj_property name="ObjectShortName">wren_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/DUT/Controller/do_valid_i" type="logic">
+      <obj_property name="ElementShortName">do_valid_i</obj_property>
+      <obj_property name="ObjectShortName">do_valid_i</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider26">
+      <obj_property name="label">Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/DUT/Interface/sclk_i" type="logic">
+      <obj_property name="ElementShortName">sclk_i</obj_property>
+      <obj_property name="ObjectShortName">sclk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/DUT/Interface/pclk_i" type="logic">
+      <obj_property name="ElementShortName">pclk_i</obj_property>
+      <obj_property name="ObjectShortName">pclk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/DUT/Interface/rst_i" type="logic">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/DUT/Interface/spi_sck_o" type="logic">
+      <obj_property name="ElementShortName">spi_sck_o</obj_property>
+      <obj_property name="ObjectShortName">spi_sck_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Sampling_Interface_TB/DUT/Interface/di_i" type="array">
+      <obj_property name="ElementShortName">di_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">di_i[7:0]</obj_property>
+   </wvobject>
+</wave_config>

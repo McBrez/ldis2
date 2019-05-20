@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../bd/ldis_task1_bd/sim/ldis_task1_bd.vhd" \
+"../../../bd/ldis_task1_bd/ip/ldis_task1_bd_SamplingWrapper_0_0/sim/ldis_task1_bd_SamplingWrapper_0_0.vhd" \
+"../../../bd/ldis_task1_bd/ip/ldis_task1_bd_CTRLWrapper_0_0/sim/ldis_task1_bd_CTRLWrapper_0_0.vhd" \
+"../../../bd/ldis_task1_bd/ip/ldis_task1_bd_ila_0_0/sim/ldis_task1_bd_ila_0_0.vhd" \
+"../../../bd/ldis_task1_bd/ip/ldis_task1_bd_DspWrapper_0_0/sim/ldis_task1_bd_DspWrapper_0_0.vhd" \
+
+nosort

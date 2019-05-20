@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="ldis_task1_bd" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1557775558"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1557775558"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1557775558"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1557775558"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1558367193"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1558367193"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1558367193"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1558367193"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth\ldis_task1_bd.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
@@ -25,56 +25,40 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\ldis_task1_bd_angle_encoder_0_1\ldis_task1_bd_angle_encoder_0_1.xci" Type="IP">
-        <Instance HierarchyPath="angle_encoder_0"/>
+      <File Name="ip\ldis_task1_bd_SamplingWrapper_0_0\ldis_task1_bd_SamplingWrapper_0_0.xci" Type="IP">
+        <Instance HierarchyPath="SamplingWrapper_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\ldis_task1_bd_ADXL362Ctrl_0_0\ldis_task1_bd_ADXL362Ctrl_0_0.xci" Type="IP">
-        <Instance HierarchyPath="ADXL362Ctrl_0"/>
+      <File Name="ip\ldis_task1_bd_CTRLWrapper_0_0\ldis_task1_bd_CTRLWrapper_0_0.xci" Type="IP">
+        <Instance HierarchyPath="CTRLWrapper_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\ldis_task1_bd_quadratic_func_0_0\ldis_task1_bd_quadratic_func_0_0.xci" Type="IP">
-        <Instance HierarchyPath="quadratic_func_0"/>
+      <File Name="ip\ldis_task1_bd_ila_0_0\ldis_task1_bd_ila_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ila_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\ldis_task1_bd_xlconstant_0_0\ldis_task1_bd_xlconstant_0_0.xci" Type="IP">
-        <Instance HierarchyPath="xlconstant_0"/>
+      <File Name="ip\ldis_task1_bd_DspWrapper_0_0\ldis_task1_bd_DspWrapper_0_0.xci" Type="IP">
+        <Instance HierarchyPath="DspWrapper_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\ldis_task1_bd_xlconstant_0_1\ldis_task1_bd_xlconstant_0_1.xci" Type="IP">
-        <Instance HierarchyPath="xlconstant_1"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\ldis_task1_bd_xlconstant_0_2\ldis_task1_bd_xlconstant_0_2.xci" Type="IP">
-        <Instance HierarchyPath="xlconstant_2"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\ldis_task1_bd_xlconstant_0_3\ldis_task1_bd_xlconstant_0_3.xci" Type="IP">
-        <Instance HierarchyPath="xlconstant_3"/>
+      <File Name="ip\ldis_task1_bd_OutputWrapper_0_0\ldis_task1_bd_OutputWrapper_0_0.xci" Type="IP">
+        <Instance HierarchyPath="OutputWrapper_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

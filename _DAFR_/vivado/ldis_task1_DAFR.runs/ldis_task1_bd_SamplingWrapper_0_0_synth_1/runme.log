@@ -1,0 +1,596 @@
+
+*** Running vivado
+    with args -log ldis_task1_bd_SamplingWrapper_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ldis_task1_bd_SamplingWrapper_0_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Users/David/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source ldis_task1_bd_SamplingWrapper_0_0.tcl -notrace
+WARNING: [Board 49-91] Board repository path '{C:UsersDavidDocumentsivado-boards
+ewoard_files}' does not exist, it will not be used to search board files.
+Command: synth_design -top ldis_task1_bd_SamplingWrapper_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2416 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 411.676 ; gain = 105.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ldis_task1_bd_SamplingWrapper_0_0' [d:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/bd/ldis_task1_bd/ip/ldis_task1_bd_SamplingWrapper_0_0/synth/ldis_task1_bd_SamplingWrapper_0_0.vhd:79]
+	Parameter slaveCount bound to: 4 - type: integer 
+	Parameter pindex bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'SamplingWrapper' declared at 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/SamplingWrapper.vhd:37' bound to instance 'U0' of component 'SamplingWrapper' [d:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/bd/ldis_task1_bd/ip/ldis_task1_bd_SamplingWrapper_0_0/synth/ldis_task1_bd_SamplingWrapper_0_0.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'SamplingWrapper' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/SamplingWrapper.vhd:68]
+	Parameter slaveCount bound to: 4 - type: integer 
+	Parameter pindex bound to: 0 - type: integer 
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 500000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 1000 - type: integer 
+INFO: [Synth 8-3491] module 'ADXL362Ctrl' declared at 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/Desktop/ADXL362Ctrl.vhd:89' bound to instance 'SPI_INTERFACE' of component 'ADXL362Ctrl' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/SamplingWrapper.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'ADXL362Ctrl' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/Desktop/ADXL362Ctrl.vhd:117]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 500000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 1000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/Desktop/ADXL362Ctrl.vhd:283]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/Desktop/ADXL362Ctrl.vhd:312]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/Desktop/ADXL362Ctrl.vhd:365]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 500000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'SPI_If' declared at 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/hdl/SPI_If.vhd:42' bound to instance 'SPI_Interface' of component 'SPI_If' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/Desktop/ADXL362Ctrl.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'SPI_If' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/hdl/SPI_If.vhd:66]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 500000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/hdl/SPI_If.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'SPI_If' (1#1) [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/hdl/SPI_If.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ADXL362Ctrl' (2#1) [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/Desktop/ADXL362Ctrl.vhd:117]
+	Parameter pindex bound to: 0 - type: integer 
+	Parameter regCount bound to: 2 - type: integer 
+	Parameter slaveCount bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'APBSlaveIF' declared at 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/APBSlaveIF.vhd:33' bound to instance 'APB_INTERFACE' of component 'APBSlaveIF' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/SamplingWrapper.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'APBSlaveIF' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/APBSlaveIF.vhd:61]
+	Parameter pindex bound to: 0 - type: integer 
+	Parameter regCount bound to: 2 - type: integer 
+	Parameter slaveCount bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'PADDR' is read in the process but is not in the sensitivity list [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/APBSlaveIF.vhd:80]
+WARNING: [Synth 8-614] signal 'REG_ADDR' is read in the process but is not in the sensitivity list [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/APBSlaveIF.vhd:80]
+WARNING: [Synth 8-4767] Trying to implement RAM 'regArray_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "regArray_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'APBSlaveIF' (3#1) [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/APBSlaveIF.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'SamplingWrapper' (4#1) [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/new/SamplingWrapper.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'ldis_task1_bd_SamplingWrapper_0_0' (5#1) [d:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/bd/ldis_task1_bd/ip/ldis_task1_bd_SamplingWrapper_0_0/synth/ldis_task1_bd_SamplingWrapper_0_0.vhd:79]
+WARNING: [Synth 8-3331] design APBSlaveIF has unconnected port PSEL[3]
+WARNING: [Synth 8-3331] design APBSlaveIF has unconnected port PSEL[2]
+WARNING: [Synth 8-3331] design APBSlaveIF has unconnected port PSEL[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 469.055 ; gain = 162.492
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 469.055 ; gain = 162.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 469.055 ; gain = 162.492
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 803.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 803.121 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 805.684 ; gain = 2.563
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 805.684 ; gain = 499.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 805.684 ; gain = 499.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 805.684 ; gain = 499.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'StC_reg' in module 'SPI_If'
+INFO: [Synth 8-5546] ROM "SCLK_2X_TICK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "StN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Spi_SendRec_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Spi_Trans_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Adxl_Ctrl_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-5546] ROM "Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Addr_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "StN_Spi_Trans" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Addr_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "StN_Spi_Trans" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Data[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Data[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg[1]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cnt_Bytes_Sent" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'regInterfaceState_reg' in module 'APBSlaveIF'
+INFO: [Synth 8-5545] ROM "REG_RDY" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "regInterfaceState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regInterfaceState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'StateWrapper_reg' in module 'SamplingWrapper'
+INFO: [Synth 8-5545] ROM "REG_IN0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "StateWrapper" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                               00 |                         10100000
+               stprepare |                               01 |                         00001001
+                 stshift |                               10 |                         01011011
+                  stdone |                               11 |                         00001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_reg' using encoding 'sequential' in module 'SPI_If'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        stspisendrecidle |                              000 |                          0000000
+         stspipreparecmd |                              001 |                          1000001
+         stspisendstartw |                              010 |                          0001011
+        stspiwaitondonew |                              011 |                          0000111
+         stspisendstartr |                              100 |                          0001110
+        stspiwaitondoner |                              101 |                          0100100
+        stspisendrecdone |                              110 |                          0010101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Spi_SendRec_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          stspitransidle |                              000 |                       0000000000
+     stspiprepandsendcmd |                              001 |                       1111100001
+       stspiwaitondonesr |                              010 |                       0000110011
+     stspiwaitforssinact |                              011 |                       0000000010
+          stspitransdone |                              100 |                       0000001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Spi_Trans_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          stadxlctrlidle |                             0000 |                     100100000000
+      stadxlsendresetcmd |                             0001 |                     011001000001
+     stadxlwaitresetdone |                             0010 |                     010000000011
+    stadxlconf_remaining |                             0011 |                     011001000010
+stadxlwaitsampleratetick |                             0100 |                     000100000110
+       stadxlread_status |                             0101 |                     011001000111
+         stadxlread_data |                             0110 |                     011000000101
+      stadxlformatandsum |                             0111 |                     000010101101
+         stadxlread_done |                             1000 |                     000001011111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Adxl_Ctrl_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+  statereginterface_idle |                              000 | 00000000000000000000000000000000
+statereginterface_waitforread |                              001 | 00000000000000000000000000000100
+statereginterface_waitforwrite |                              010 | 00000000000000000000000000000101
+ statereginterface_ready |                              011 | 00000000000000000000000000000010
+statereginterface_buffer |                              100 | 00000000000000000000000000000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'regInterfaceState_reg' using encoding 'sequential' in module 'APBSlaveIF'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+       statewrapper_init |                              001 | 00000000000000000000000000000000
+      statewrapper_write |                              010 | 00000000000000000000000000000001
+       statewrapper_wait |                              100 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StateWrapper_reg' using encoding 'one-hot' in module 'SamplingWrapper'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 805.684 ; gain = 499.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               19 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	                8 Bit    Registers := 15    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+	   5 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   9 Input     12 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 2     
+	   7 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 11    
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 25    
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 5     
+	   9 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SPI_If 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module ADXL362Ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               19 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   9 Input     12 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 21    
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module APBSlaveIF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+	   5 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 4     
+Module SamplingWrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'U0/SPI_INTERFACE/Cmd_Reg_Data_Addr_reg[1:0]' into 'U0/SPI_INTERFACE/Cmd_Reg_Data_Addr_reg[1:0]' [D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.srcs/sources_1/imports/Desktop/ADXL362Ctrl.vhd:451]
+INFO: [Synth 8-5544] ROM "U0/SPI_INTERFACE/Cmd_Reg_Addr_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "U0/SPI_INTERFACE/Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "U0/SPI_INTERFACE/SPI_Interface/SCLK_2X_TICK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U0/SPI_INTERFACE/Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U0/SPI_INTERFACE/Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port PREADY driven by constant 1
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[31] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[30] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[29] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[28] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[27] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[26] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[25] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[24] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[23] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[22] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[21] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[20] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[19] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[18] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[17] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[16] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[15] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[14] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[13] driven by constant 0
+INFO: [Synth 8-3917] design ldis_task1_bd_SamplingWrapper_0_0 has port DBG_REG_IN[12] driven by constant 0
+WARNING: [Synth 8-3331] design ldis_task1_bd_SamplingWrapper_0_0 has unconnected port PSEL[3]
+WARNING: [Synth 8-3331] design ldis_task1_bd_SamplingWrapper_0_0 has unconnected port PSEL[2]
+WARNING: [Synth 8-3331] design ldis_task1_bd_SamplingWrapper_0_0 has unconnected port PSEL[1]
+INFO: [Synth 8-3886] merging instance 'U0/SPI_INTERFACE/Cmd_Reg_reg[0][0]' (FDRE) to 'U0/SPI_INTERFACE/Cmd_Reg_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'U0/SPI_INTERFACE/Cmd_Reg_reg[0][3]' (FDRE) to 'U0/SPI_INTERFACE/Cmd_Reg_reg[0][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/SPI_INTERFACE/Cmd_Reg_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/SPI_INTERFACE/Cmd_Reg_reg[1][7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 805.684 ; gain = 499.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 805.684 ; gain = 499.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 805.684 ; gain = 499.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 826.801 ; gain = 520.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 826.801 ; gain = 520.238
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 826.801 ; gain = 520.238
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 826.801 ; gain = 520.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 826.801 ; gain = 520.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 826.801 ; gain = 520.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 826.801 ; gain = 520.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                       | RTL Name                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|ldis_task1_bd_SamplingWrapper_0_0 | U0/SPI_INTERFACE/Data_Reg_reg[4][7] | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|ldis_task1_bd_SamplingWrapper_0_0 | U0/SPI_INTERFACE/Data_Reg_reg[4][6] | 5      | 6     | NO           | NO                 | YES               | 6      | 0       | 
++----------------------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    15|
+|2     |LUT1   |     5|
+|3     |LUT2   |    39|
+|4     |LUT3   |   108|
+|5     |LUT4   |    45|
+|6     |LUT5   |    26|
+|7     |LUT6   |    63|
+|8     |SRL16E |     8|
+|9     |FDRE   |   310|
+|10    |FDSE   |     5|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |   624|
+|2     |  U0                |SamplingWrapper |   624|
+|3     |    APB_INTERFACE   |APBSlaveIF      |   261|
+|4     |    SPI_INTERFACE   |ADXL362Ctrl     |   345|
+|5     |      SPI_Interface |SPI_If          |    83|
++------+--------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 826.801 ; gain = 520.238
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 826.801 ; gain = 183.609
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 826.801 ; gain = 520.238
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 828.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+104 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 828.645 ; gain = 535.148
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 828.645 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.runs/ldis_task1_bd_SamplingWrapper_0_0_synth_1/ldis_task1_bd_SamplingWrapper_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 828.645 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/DEV/ldis_task2/_DAFR_/vivado/ldis_task1_DAFR.runs/ldis_task1_bd_SamplingWrapper_0_0_synth_1/ldis_task1_bd_SamplingWrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ldis_task1_bd_SamplingWrapper_0_0_utilization_synth.rpt -pb ldis_task1_bd_SamplingWrapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 20 16:37:39 2019...

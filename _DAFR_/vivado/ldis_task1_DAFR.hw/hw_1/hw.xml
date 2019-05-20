@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2018.3 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7a100t_0" gui_info="dashboard1=dashboard_1[xc7a100t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7a100t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7a100t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7a100t_0/hw_ila_1/Status=ILA_STATUS_1;xc7a100t_0/hw_ila_1/Waveform=ILA_WAVE_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a100t_0" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/ldis_task1_bd_wrapper.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/ldis_task1_bd_wrapper.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/ldis_task1_bd_wrapper.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="ldis_task1_bd_i/ila_0" gui_info="">
+      <Properties Property="CONTROL.DATA_DEPTH" value="128"/>
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="OR"/>
+      <Properties Property="CONTROL.TRIGGER_POSITION" value="63"/>
+      <Properties Property="CONTROL.WINDOW_COUNT" value="1"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[11:0]" gui_info=""/>
+    <Object name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[11:0]" gui_info="Trigger Setup=0"/>
+    <Object name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[31:0]" gui_info=""/>
+    <Object name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_RDY" gui_info=""/>
+    <Object name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_WREN" gui_info="Trigger Setup=0"/>
+    <Object name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_WREN" gui_info="Trigger Setup=0"/>
+    <Object name="ldis_task1_bd_i/angle_encoder_0_bar_o[15:0]" gui_info=""/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq12&apos;hXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="SIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[11:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[11]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[10]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[9]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[8]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[7]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[6]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[5]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[4]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[3]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[2]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[1]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_X[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq12&apos;hXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="SIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[11:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[11]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[10]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[9]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[8]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[7]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[6]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[5]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[4]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[3]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[2]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[1]"/>
+        <net name="ldis_task1_bd_i/ADXL362Ctrl_0_ACCEL_Y[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[31]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[30]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[29]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[28]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[27]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[26]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[25]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[24]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[23]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[22]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[21]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[20]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[19]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[18]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[17]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[16]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[15]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[14]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[13]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[12]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[11]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[10]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[9]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[8]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[7]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[6]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[5]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[4]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[3]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[2]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[1]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_ACC_VAL[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[31]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[30]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[29]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[28]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[27]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[26]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[25]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[24]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[23]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[22]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[21]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[20]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[19]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[18]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[17]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[16]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[15]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[14]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[13]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[12]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[11]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[10]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[9]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[8]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[7]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[6]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[5]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[4]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[3]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[2]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[1]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_DEBUG_DSP_VAL[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[31]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[30]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[29]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[28]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[27]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[26]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[25]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[24]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[23]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[22]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[21]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[20]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[19]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[18]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[17]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[16]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[15]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[14]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[13]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[12]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[11]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[10]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[9]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[8]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[7]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[6]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[5]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[4]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[3]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[2]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[1]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PADDR[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PENABLE"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe8[3:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq4&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PSEL[3]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PSEL[2]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PSEL[1]"/>
+        <net name="ldis_task1_bd_i/CTRLWrapper_0_PSEL[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq3&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq3&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[2:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq3&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_ADDR[2]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_ADDR[1]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_ADDR[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[31]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[30]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[29]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[28]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[27]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[26]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[25]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[24]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[23]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[22]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[21]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[20]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[19]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[18]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[17]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[16]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[15]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[14]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[13]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[12]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[11]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[10]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[9]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[8]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[7]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[6]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[5]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[4]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[3]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[2]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[1]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_IN[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[31]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[30]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[29]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[28]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[27]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[26]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[25]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[24]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[23]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[22]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[21]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[20]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[19]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[18]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[17]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[16]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[15]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[14]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[13]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[12]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[11]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[10]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[9]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[8]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[7]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[6]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[5]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[4]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[3]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[2]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[1]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_OUT[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe7[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_RDY"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_RW"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bB"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe5[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bB"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/DspWrapper_0_DBG_REG_WREN"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq12&apos;hXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[11:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq12&apos;hXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/DspWrapper_0_x_in_dbg[11]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_x_in_dbg[10]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_x_in_dbg[9]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_x_in_dbg[8]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_x_in_dbg[7]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_x_in_dbg[6]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_x_in_dbg[5]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_x_in_dbg[4]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_x_in_dbg[3]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_x_in_dbg[2]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_x_in_dbg[1]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_x_in_dbg[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq14&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[13:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[13]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[12]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[11]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[10]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[9]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[8]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[7]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[6]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[5]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[4]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[3]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[2]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[1]"/>
+        <net name="ldis_task1_bd_i/DspWrapper_0_y_trunc_out_dbg[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[2]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/NLW_ila_0_probe6_UNCONNECTED"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq2&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq2&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[1:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq2&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_ADDR[1]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_ADDR[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[31]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[30]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[29]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[28]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[27]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[26]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[25]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[24]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[23]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[22]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[21]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[20]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[19]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[18]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[17]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[16]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[15]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[14]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[13]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[12]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[11]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[10]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[9]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[8]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[7]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[6]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[5]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[4]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[3]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[2]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[1]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_IN[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[31]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[30]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[29]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[28]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[27]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[26]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[25]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[24]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[23]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[22]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[21]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[20]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[19]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[18]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[17]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[16]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[15]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[14]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[13]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[12]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[11]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[10]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[9]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[8]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[7]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[6]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[5]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[4]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[3]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[2]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[1]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_OUT[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe7[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_RDY"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_RW"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe5[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_DBG_REG_WREN"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe10[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[15]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[14]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[13]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[12]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[11]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[10]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[9]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[8]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[7]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[6]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[5]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[4]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[3]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[2]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[1]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_LED_BAR[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq14&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe9[13:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[13]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[12]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[11]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[10]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[9]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[8]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[7]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[6]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[5]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[4]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[3]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[2]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[1]"/>
+        <net name="ldis_task1_bd_i/OutputWrapper_0_angle_o[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq3&apos;hX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq3&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[2:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq3&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_ADDR[2]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_ADDR[1]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_ADDR[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[31]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[30]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[29]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[28]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[27]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[26]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[25]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[24]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[23]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[22]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[21]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[20]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[19]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[18]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[17]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[16]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[15]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[14]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[13]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[12]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[11]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[10]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[9]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[8]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[7]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[6]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[5]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[4]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[3]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[2]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[1]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_IN[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[31]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[30]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[29]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[28]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[27]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[26]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[25]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[24]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[23]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[22]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[21]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[20]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[19]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[18]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[17]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[16]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[15]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[14]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[13]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[12]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[11]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[10]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[9]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[8]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[7]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[6]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[5]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[4]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[3]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[2]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[1]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_OUT[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe7[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_RDY"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_RW"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;bB"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe5[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bB"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_DBG_REG_WREN"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="BINARY"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[31]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[30]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[29]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[28]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[27]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[26]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[25]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[24]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[23]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[22]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[21]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[20]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[19]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[18]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[17]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[16]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[15]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[14]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[13]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[12]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[11]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[10]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[9]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[8]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[7]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[6]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[5]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[4]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[3]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[2]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[1]"/>
+        <net name="ldis_task1_bd_i/SamplingWrapper_0_PRDATA[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[15]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[14]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[13]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[12]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[11]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[10]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[9]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[8]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[7]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[6]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[5]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[4]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[3]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[2]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[1]"/>
+        <net name="ldis_task1_bd_i/angle_encoder_0_bar_o[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq6&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq6&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="SIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[5:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq6&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_int_out[5]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_int_out[4]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_int_out[3]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_int_out[2]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_int_out[1]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_int_out[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq36&apos;hX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq36&apos;hX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="SIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[35:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq36&apos;hX_XXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[35]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[34]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[33]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[32]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[31]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[30]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[29]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[28]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[27]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[26]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[25]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[24]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[23]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[22]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[21]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[20]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[19]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[18]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[17]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[16]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[15]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[14]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[13]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[12]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[11]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[10]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[9]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[8]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[7]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[6]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[5]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[4]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[3]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[2]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[1]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_out[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq14&apos;hXXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="BINARY"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[13:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq14&apos;hXXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[13]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[12]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[11]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[10]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[9]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[8]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[7]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[6]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[5]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[4]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[3]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[2]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[1]"/>
+        <net name="ldis_task1_bd_i/quadratic_func_0_y_trunc_out[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>
