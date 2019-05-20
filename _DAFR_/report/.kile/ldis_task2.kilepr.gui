@@ -1,0 +1,29 @@
+[General]
+kile_livePreviewEnabled=true
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+lastDocument=main.tex
+
+[document-settings,item:main.tex]
+Bookmarks=
+Encoding=windows-1252
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[item:ldis_task2.kilepr]
+open=false
+order=-1
+
+[item:main.tex]
+open=true
+order=0
+
+[view-settings,view=0,item:main.tex]
+CursorColumn=237
+CursorLine=624
+JumpList=
+TextFolding=[]
+ViMarks=.,624,236,[,624,236,],624,236
